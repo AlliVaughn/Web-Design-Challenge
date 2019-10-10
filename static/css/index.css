@@ -1,0 +1,32 @@
+
+.display-4{ 
+	color:#000000; 
+}
+body > nav{ 
+	background-color: #F4F6FC; 
+}
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #D6EDE2;
+    border-bottom: 1px solid #D6EDE2;
+}
+th{
+	text-align: center; 
+}
+.lead{
+	text-align: left;
+}
+h4{
+	margin-top: 10% ; 
+}
+.navbar-expand-lg .navbar-collapse {
+	margin-right: 5%; 
+}
+body > footer{
+	background-color: #9FC4B7;
+	height:15em;
+	vertical-align: text-bottom;
+	border-top: 3px solid #1107D1; 
+	margin-top:10%; 
+}

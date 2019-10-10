@@ -1,0 +1,66 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href=<img src="{{url_for('static', filename='favicon.png')}}">
+
+    <title> Weather or Not </title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href={{url_for('static', filename='css/index.css') }}>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">
+          <img src="{{url_for('static', filename='cloud.png')}}" width="80" height="80" class="d-inline-block align-middle" alt=""><span class="navbar-brand mb-0 h1">    &nbsp;&nbsp; WEATHER OR NOT</span>
+        </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <!-- Align Navbar items to the right -->
+        <ul class="navbar-nav ml-md-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Plots
+            </a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/maxtemp">Max Temperature</a>
+                <a class="dropdown-item" href="/humidity">Humidity</a>
+                <a class="dropdown-item" href="/cloudiness">Cloudiness</a>
+                <a class="dropdown-item" href="/windspeed">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/dash.html">Comparison</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/data.html">Data</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav> 
+    <div class ="container-fluid">
+      {% block content %}
+      {% endblock %}
+    </div>  
+    <footer class="page-footer font-small ">
+    <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="https://www.linkedin.com/in/alli-vaughn/"> Alli Vaughn</a>
+      </div>
+  
+
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+
+
+
+  {% extends "base.html" %}
+   
+
+  {% block content %}
+
+          <main role="main" class="col-md-12 ml-sm-4 col-lg-10 pt-3 px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+              <h1 class="display-4 text-center">Comparison</h1>
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+              <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">vs Max Temp</h4>
+                </div>
+                <div class="card-body">
+                 
+                  <img class="card-img-top" src="../static/images/fig1.png" alt="Card image cap">
+                 
+                   <a href="/maxtemp" class="btn btn-lg btn-block btn-outline-secondary">View »</a>
+                </div>
+              </div>
+              <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">vs Humidity</h4>
+                </div>
+                <div class="card-body">
+                  
+                  <img class="card-img-top" src="../static/images/fig2.png" alt="Card image cap">  
+                  <a href="/humidity" class="btn btn-lg btn-block btn-outline-secondary">View »</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-deck mb-3 text-center">
+              <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">vs Cloudiness</h4>
+                </div>
+                <div class="card-body">
+                 
+                  <img class="card-img-top" src="../static/images/fig3.png" alt="Card image cap">
+                  
+                   <a href="/cloudiness" class="btn btn-lg btn-block btn-outline-secondary">View »</a>
+                </div>
+              </div>
+              <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">vs Wind Speed</h4>
+                </div>
+                <div class="card-body">
+                  
+                  <img class="card-img-top" src="../static/images/fig4.png" alt="Card image cap">
+                  
+                   <a href="/windspeed" class="btn btn-lg btn-block btn-outline-secondary">View »</a>
+                </div>
+              </div>
+            </div>
+
+  {% endblock %}  
