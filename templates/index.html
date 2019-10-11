@@ -3,11 +3,11 @@
   
 {% block content %}
 
-
+  
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 class="display-4" >Explore Latitude vs X</h1>
       <hr/>
-
+      <div class = "container-fluid">
         <div class="row">
           <div class="col-sm-4">
             <p class="lead">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulle ddata from Open Weather Map API to assemble a dataset on over 500 cities. </p>
@@ -19,18 +19,17 @@
             <p class= "lead">This site provides the source data and visualizations created as part of the  analysis as well as explanations and descriptions of any trends and correlations witnessed. </p>
           </div>
         </div>
-      <!-- </div> -->
-    </div>
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      </div>
+    <!-- </div> -->
+    <!-- <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center"> -->
       <h2>Visualizations</h2>
       <hr/>
-    </div>
-    <div class="card-deck mb-3 text-center">
+    <!-- </div> -->
+    <!-- div class="card-deck mb-3 text-center">
         <div class="card mb-4 box-shadow">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal">Max Temp</h4>
           </div>
-          <d
             <img class="card-img-top" src="../static/images/fig1.png" alt="Card image cap">
            
              <a href="/maxtemp" class="btn btn-lg btn-block btn-outline-secondary">View »</a>
@@ -68,7 +67,59 @@
             
              <a href="/windspeed" class="btn btn-lg btn-block btn-outline-secondary">View »</a>
           </div>
-        </div>
+        </div> -->
+         <!-- <main role="main" class="col-md-12 ml-sm-4 col-lg-10 pt-3 px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+              <h1 class="display-4 text-center">Comparison</h1>
+            </div> -->
+
+            <div class="card-deck mb-3 text-center">
+              <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">vs Max Temp</h4>
+                </div>
+                <div class="card-body">
+                 
+                  <img class="card-img-top" src="../static/images/fig1.png" alt="Card image cap">
+                 
+                   <a href="/maxtemp" class="btn btn-lg btn-block btn-outline-secondary">View »</a>
+                </div>
+              </div>
+              <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">vs Humidity</h4>
+                </div>
+                <div class="card-body">
+                  
+                  <img class="card-img-top" src="../static/images/fig2.png" alt="Card image cap">  
+                  <a href="/humidity" class="btn btn-lg btn-block btn-outline-secondary">View »</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-deck mb-3 text-center">
+              <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">vs Cloudiness</h4>
+                </div>
+                <div class="card-body">
+                 
+                  <img class="card-img-top" src="../static/images/fig3.png" alt="Card image cap">
+                  
+                   <a href="/cloudiness" class="btn btn-lg btn-block btn-outline-secondary">View »</a>
+                </div>
+              </div>
+              <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">vs Wind Speed</h4>
+                </div>
+                <div class="card-body">
+                  
+                  <img class="card-img-top" src="../static/images/fig4.png" alt="Card image cap">
+                  
+                   <a href="/windspeed" class="btn btn-lg btn-block btn-outline-secondary">View »</a>
+                </div>
+              </div>
+            </div>
   </div>      
 {% endblock %}
       
